@@ -49,4 +49,10 @@ class AddPost extends Component {
     }
 }
 
+function mapStateToProps(state) {
+    return {
+      db_profile: state.auth_reducer.db_profile
+    }
+}
+
 export default connect(mapStateToProps)(AddPost)
